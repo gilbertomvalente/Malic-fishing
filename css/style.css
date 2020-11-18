@@ -38,16 +38,21 @@ img {
     display: block;
 }
 
-.container-toppage {
+body {
+    height: 500rem;
+}
+
+/* Topo da página */
+
+.toppage {
     max-width: 100%;
-    border: 1px solid #cccccc;
+    border: 1px solid rgba(204, 204, 204, .5);
 }
 
 /* Topo da página */
 
 .toppage1 {
     display: flex;
-    justify-content: space-between;
     padding: 0px 7.5%;
     height: 3.2rem;
     background-color: black;
@@ -57,17 +62,18 @@ img {
 .toppage1 a {
     color: white;
     text-decoration: none;
-    font-size: 1rem;
-    margin: 0% 5px;
+    font-size: .8rem;
+    margin: 0% 15px;
 }
+
 .toppage1 i {
     margin-right: 5px;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .toppageleft {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     width: 75%;
 }
@@ -85,7 +91,7 @@ img {
     display: flex;
     justify-content: space-between;
     height: 5.6rem;
-    margin: 0 auto;
+    margin: 0;
     background-color: #fff;
     width: 90%;
 }
@@ -97,27 +103,21 @@ img {
 /* Formatação do Menu */
 
 .topmenu {
-    margin-top: 25px;
     display: flex;
-    width: 40rem;
+    justify-content: flex-end;
+    margin-top: 25px;
 }
 
 /* posiciona um elemento ao lado do outro e formata o botão */
 
 .topmenu li {
-    position: relative;
-    width: 6.25rem;
     list-style: none;
-    margin-left: 4px;
     line-height: 2.5rem;
-    text-align: center;
-    font-size: large;
+    font-size: medium;
     font-weight: 600;
-}
-
-.topsubmenu li {
-    display: block;
-    margin-left: -.5rem;
+    width: 40px;
+    margin: 0 20px;
+    text-align: center;
 }
 
 /* Formata o link da opção */
@@ -186,63 +186,323 @@ img {
     background-color: #17a2b8;
 }
 
-/* Formatação do Menu 
+/* Formatação da primeira section */
 
-.menu {
+.top-section {
+    background-color: #f9fafc;
+    max-width: 100%;
+}
+
+.principal-section {
+    max-width: 85%;
+}
+
+.social {
+    width: 5rem;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    height: 30rem;
+    justify-content: center;
+}
+
+.social i {
+    margin: 10px auto;
+}
+
+.toptext {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px 0 0;
+}
+
+.toptext-text {
+    width: 45%;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: left;
+}
+
+.toptext-text h1 {
+    line-height: 150%;
+    margin-bottom: 2rem;
+}
+
+.toptext-text h3 {
+    line-height: 150%;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.toptext-imagem {
+    margin-top: 2rem;
+    width: 45%;
+}
+
+.toptext-imagem img {
+    width: 90%;
+}
+
+.toptext-text a {
+    display: block;
+    float: left;
+    width: 12rem;
+    line-height: 3rem;
+    text-align: center;
+    background-color: #0d5763;
+    color: #ffffff;
+}
+
+.fishing {
     display: flex;
     justify-content: space-around;
-    width: 90%;
-    padding-top: 90px;
-    margin-left: 40px;
+    margin-top: 50px;
 }
 
-/* posiciona um elemento ao lado do outro e formata o botão 
+.ice-fishing {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
 
-.menu li {
-    position: relative;
-    margin: 0 2px;
-    text-align: left;
-    list-style: none;
+.fly-fishing {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.fishing-tips {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.boat-fishing {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.fishing img {
+    width: 50%;
+    margin: 40px auto 20px;
+}
+
+.fishing h4 {
+    color: #17a2b8;
+    margin: 20px auto
+}
+
+.fishing p {
+    margin: 0 20px;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.section-about {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.section-about-text h4 {
+    color: #17a2b8;
+}
+
+.section-about-text h2 {
+    line-height: 150%;
+    font-weight: 300;
+}
+
+.section-about-text p {
+    line-height: 130%;
+    font-weight: 300;
     font-size: medium;
-    font-weight: 600;
+    margin: 10px 0;
 }
 
-/* Formata o link da opção 
+.section-about-text ul li {
+    list-style: none;
+    font-weight: 300;
+    font-size: medium;
+    margin: 10px 0;
+}
 
-.menu li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px;
+.section-about-text i {
+    color: #17a2b8;
+    margin-right: 5px;
+    font-size: 1rem;
+}
+
+.section-about-text a {
     display: block;
-    transition: 1s;
-    background: #000033;
+    float: left;
+    width: 8rem;
+    line-height: 3rem;
+    text-align: center;
+    background-color: #0d5763;
+    color: #ffffff;
 }
 
-/* Aplica uma nova cor toda vez que o mouse passa sobre os links
-
-.menu li a:hover {
-    text-shadow: 0px 0px 5px #fff;
-    background-color: #007bd7;
+.top-title h2 {
+    color: #17a2b8;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-/*  Formata o sub-menu 
-
-.menu li ul {
-    position: absolute;
-    top: 1.4em;
-    display: none;
-    z-index: 1;
+.top-title span {
+    display: flex;
+    justify-content: center;
+    width: 40px;
 }
 
-.menu li ul li {
-    background: bisque;
-    width: 100px;
+.top-title h3 {
+    line-height: 170%;
+    font-weight: 300;
+    font-size: medium;
+    margin: 20px 250px;
+    text-align: center;
 }
 
-.menu li:hover ul {
-    display: block;
+.our-services-services {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto;
 }
 
-.menu li ul li a {
-    background: rgb(65, 36, 2);
+.services {
+    width: 380px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.services img {
+    width: 380px;
+    height: 200px;
+}
+
+.services h4 {
+    margin-top: -100px;
+    margin-left: 100px;
+    width: 22.5rem;
+    line-height: 1rem;
+    color: rgba(255, 255, 255, .8);
+}
+
+.feedback {
+    display: flex;
+}
+
+.feedback1 img, .feedback2 img {
+    border-radius: 50%;
+    float: left;
+    width: 15%;
+}
+
+.feedback h3 {
+    font-weight: 200;
+    margin-left: 80px;
+    margin-top: 15px;
+}
+
+.feedback h5 {
+    color: #17a2b8;
+    margin-left: 80px;
+    margin-top: 3px;
+}
+
+.feedback1 p, .feedback2 p {
+    width: 10px 20px;
+    line-height: 200%;
+}
+
+.feedback1, .feedback2 {
+    border: 1px solid rgba(204, 204, 204, .5);
+    margin: 20px;
+    padding: 50px;
+}
+
+.stars {
+    float: right;
+    color: rgb(243, 207, 47);
+    margin-top: 15px;
+}
+
+.accessories {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.accessories img {
+    width: 80%;
+    margin: 40px auto 20px;
+}
+
+.accessories h4 {
+    color: #17a2b8;
+}
+
+.fa-star {
+    color: rgb(243, 207, 47);
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.black {
+    color: black;
+}
+
+.ice-fishing {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.fly-fishing {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.fishing-tips {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.boat-fishing {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.fishing h4 {
+    color: #17a2b8;
+    margin: 20px auto
+}
+
+.fishing p {
+    margin: 0 20px;
+    line-height: 1.5rem;
+    text-align: center;
 }
