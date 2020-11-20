@@ -39,7 +39,6 @@ img {
 }
 
 body {
-    height: 500rem;
 }
 
 /* Topo da página */
@@ -506,3 +505,269 @@ body {
     line-height: 1.5rem;
     text-align: center;
 }
+
+.deal-of-the-week {
+    background-color: #f9fafc;
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between
+}
+
+.deal-img-left {
+    width: 20%;
+    justify-items: left;
+}
+
+.deal-img-left img {
+    width: 100%;
+    opacity: .5;
+}
+
+.deal-text {
+    width: 40%;
+}
+
+.deal-text span {
+    margin-right: 10px;
+}
+
+.deal-text h1 {
+    margin-top: 0px;
+}
+
+.deal-text h2 {
+    margin-top: 50px;
+}
+
+.deal-img-right {
+    width: 30%;
+    background-image: url('../imagens/product-image-3-xl.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.deal-time {
+    display: flex;
+}
+
+.deal-time-numbers {
+    background: #fff;
+    border: 1px solid rgba(204, 204, 204, .5);
+    text-align: center;
+    width: 100px;
+    margin: 5px 5px;
+    padding: 5px 10px;
+}
+
+.deal-time-numbers h4 {
+    font-weight: 100;
+}
+
+.deal-text a {
+    display: block;
+    float: left;
+    width: 8rem;
+    line-height: 3rem;
+    text-align: center;
+    background-color: #0d5763;
+    color: #ffffff;
+    margin: 20px 0 50px;
+}
+
+.blog {
+    display: flex;
+    background-color: #f9fafc;
+    max-width: 100%;
+}
+
+.blog-img img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.blog-text i {
+    color: #17a2b8;
+    margin: 20px 0px;
+}
+
+.blog-text h5 {
+    font-weight: 100;
+    margin-right: 40px;
+}
+
+.blog-text-i {
+    display: flex;
+}
+
+.blog1 {
+    width: 30%;
+}
+
+.blog-text-a {
+    width: 120px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 10px 5px;
+    font-size: medium;
+}
+
+.blog-text-a a {
+    color: #000000;
+    margin-left: 0;
+}
+
+.blog-text-a i {
+    color: rgba(0, 0, 0, .5);
+    margin-left: 0px;
+}
+
+.brand-logo {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin: 70px auto;
+}
+
+.botton-section {
+    background-color: #f9fafc;
+    width: 100%;
+}
+
+.botton-section1 {
+    width: 85%;
+    display: flex;
+    height: 150px;
+    align-items: center;
+}
+
+.subscribe {
+    width: 25%;
+    font-weight: 700;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    border: 1px solid rgba(204, 204, 204, .5);
+    height: 56px;
+    font-size: large;
+    padding: 5px;
+}
+
+.formulario input {
+    height: 38px;
+    width: 60%;
+    border: none;
+}
+
+.formulario button {
+    height: 38px;
+    width: 100px;
+    text-align: center;
+    background-color: #0d5763;
+    color: #ffffff;
+    margin: 0;
+}
+
+}
+
+.call {
+    width: 30%;
+}
+
+.call h4 {
+    color: rgba(23, 162, 184, .5);
+    line-height: 15px;
+    font-weight: 100;
+}
+
+.call h2 {
+    line-height: 25px;
+    font-weight: 700;
+}
+
+footer {
+    width: 100%;
+    background-image: url(../imagens/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 470px;
+}
+
+.top-footer {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 150%;
+    padding-top: 50px;
+}
+
+.top-footer p {
+    color: #fff;
+}
+
+.top-footer1 {
+    width: 23%;
+}
+
+.top-footer2 {
+    width: 23%;
+}
+
+.top-footer3 {
+    width: 23%;
+}
+
+.top-footer4 {
+    width: 23%;
+}
+
+.social-footer i {
+    font-size: large;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 4px;
+    margin-right: 10px;
+}
+
+.footer-contact {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: -25px;
+}
+
+.footer-contact i {
+    width: 5%;
+    color: #17a2b8;
+    margin-top: 25px;
+}
+
+.footer-contact h5 {
+    width: 75%
+}
+
+.footer-contact p {
+    margin: -10px 0 35px 10px;
+    opacity: 50%;
+}
+
+.botton-footer {
+    display: flex;
+    margin: 120px 115px 0 110px;
+}
+
+.botton-footer p {
+    color: #fff;
+    font-weight: 150px;
+    margin-left: 10px
+}
+
+.botton-footer img {
+    margin-right: 10px;
