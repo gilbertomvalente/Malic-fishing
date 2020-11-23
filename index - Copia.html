@@ -7,9 +7,7 @@
         <title>Malic Fishing</title>
         <link rel="stylesheet" href="css/style.css">
 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Hind:wght@500;600&family=Montserrat:wght@400;500;700;800&display=swap"
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap"
             rel="stylesheet">
 
         <script src="https://kit.fontawesome.com/2b57bfb198.js" crossorigin="anonymous"></script>
@@ -42,12 +40,13 @@
                             <img src="imagens/logo.png" alt="Malic-Fishing">
                         </div>
 
-                        <nav class="topmenu">
-                            <ul class="topmenu-itens">
+                        <nav>
+                            <ul class="topmenu">
                                 <li><a href="">Home</a></li>
                                 <li><a href="">About</a></li>
                                 <li><a href="">Service</a></li>
-                                <li><a href="">Pages <i class="fas fa-angle-down"></i></a>
+                                <li class="topsubmenu"><a href="#">Pages</a>
+
                                     <ul>
                                         <li><a href="">About Us</a></li>
                                         <li><a href="">Our Services</a>
@@ -81,8 +80,9 @@
                                         <li><a href="">Contact Us</a></li>
                                         <li><a href="">Portfolios</a></li>
                                     </ul>
+
                                 </li>
-                                <li><a href="">Blog <i class="fas fa-angle-down"></i></a>
+                                <li class="topsubmenu"><a href="">Blog</a>
                                     <ul>
                                         <li><a href="">Blog</a></li>
                                         <li><a href="">Blog Style 2</a></li>
@@ -97,16 +97,15 @@
                                     </ul>
                                 </li>
                                 <li><a href="">Contact</a></li>
+
+                                <li>
+                                    <div class="topsearch">
+                                        <input type="text" placeholder="Search" />
+                                        <button><i class="fas fa-search"></i></button>
+                                    </div>
+                                </li>
                             </ul>
                         </nav>
-
-                        <div class="topsearch">
-                            <input type="text" placeholder="Search" />
-                            <button>
-                                <a href=""><i class="fas fa-search" style="color: #fff;"></i></a>
-                            </button>
-                            <a href=""><i class="fas fa-shopping-cart"></i></a>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -128,18 +127,25 @@
 
                     <div class="toptext-text">
 
-                        <div>
-                            <h1>A bad day can be better with fishing time!</h1>
-                        </div>
-                        <div>
-                            <h3>Fishing is the activity of trying to catch fish. A fishing vessel is a boat or ship used
-                                to
-                                catch
-                                fish in
-                                the
-                                sea.</h3>
-                        </div>
-                        <div><a href=""> Read more</a></div>
+
+                        <h1>A bad day can be better with fishing time!</h1>
+                        <h3>Fishing is the activity of trying to catch fish. A fishing vessel is a boat or ship used to
+                            catch
+                            fish in
+                            the
+                            sea.</h3>
+                        <a href=""> Read more</a>
+
+                        <!-- 
+                    <h1>A thing of beauty is a joy forever for women</h1>
+                    <h3>The experience of beauty often involves an interpretation of some entity as being in balance.
+                    </h3>
+                    <a href=""> Read more</a>
+
+                    <h1>A thing of beauty is a joy forever for women</h1>
+                    <h3>The experience of beauty often involves an interpretation of some entity as being in balance.
+                    </h3>
+                    <a href=""> Read more</a>  -->
 
                     </div>
 
@@ -152,24 +158,24 @@
         </div>
 
         <section class="principal-section">
-            <div class="type-fishing">
-                <div class="type-fishing1">
+            <div class="fishing">
+                <div class="ice-fishing">
                     <img src="imagens/icon-feature-1.png" alt="Pescando no gelo">
                     <h4>Ice fishing</h4>
                     <p>Ice fishing is the practice of catching fish with lines and fish hooks or spears through</p>
                 </div>
-                <div class="type-fishing1">
+                <div class="fly-fishing">
                     <img src="imagens/icon-feature-2.png" alt="Pescando na praia">
                     <h4>Fly fishing</h4>
                     <p>Fly fishing can be thought of as a method of casting line rather than lure.</p>
                 </div>
-                <div class="type-fishing1">
+                <div class="fishing-tips">
                     <img src="imagens/icon-feature-3.png" alt="Pescando no bote">
                     <h4>Fishing tips</h4>
                     <p>We use different types of tips for fishing in the pond, sea or ice.</p>
                 </div>
-                <div class="type-fishing1">
-                    <img src="imagens/icon-feature-4.png" alt="Pescando no barco" style="width: 60%;">
+                <div class="boat-fishing">
+                    <img src="imagens/icon-feature-4.png" alt="Pescando no barco">
                     <h4>Boat fishing</h4>
                     <p>Boat fishing is fishing from a boat in easy sight of land and in water.</p>
                 </div>
@@ -192,21 +198,14 @@
                         sed vel risus.</p>
                     <nav>
                         <ul>
-                            <li>
-                                <div class="section-about-li"><i class="far fa-check-circle"></i>
-                                    One of the reasons why people use Lorem Ipsum is because it adjusts very well in
-                                    every
-                                    ocasion.
-                                </div>
+                            <li><i class="far fa-check-circle"></i>
+                                One of the reasons why people use Lorem Ipsum is because it adjusts very well in every
+                                ocasion.
                             </li>
                             <li><i class="far fa-check-circle"></i>
                                 Quisque eleifend lorem ipsum, et tempus nulla convallis nec.</li>
-                            <li>
-                                <div class="section-about-li"><i class="far fa-check-circle"></i>
-                                    Suspendisse tempus consequat odio, quis tempus augue vulputate at.
-                                </div>
-
-                            </li>
+                            <li><i class="far fa-check-circle"></i>
+                                Suspendisse tempus consequat odio, quis tempus augue vulputate at.</li>
                         </ul>
                     </nav>
                     <a href=""> Read more</a>
@@ -302,7 +301,7 @@
                         eleifend lorem ipsum.</p>
                 </div>
 
-                <div class="feedback1">
+                <div class="feedback2">
                     <img src="imagens/author-image-2.png" alt="icon divisor">
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -353,7 +352,7 @@
                     </h4>
 
                 </div>
-                <div class="accessories1">
+                <div class="accessories2">
                     <img src="imagens/product-image-2.jpg" alt="Vara de pescaria">
                     <h3>Fishing Rods</h3>
                     <i class="fas fa-star"></i>
@@ -365,7 +364,7 @@
                     <h4>$69.99</h4>
 
                 </div>
-                <div class="accessories1">
+                <div class="accessories3">
                     <img src="imagens/product-image-3.jpg" alt="Moulinete">
                     <h3>Fishing Reel</h3>
                     <i class="fas fa-star"></i>
@@ -376,7 +375,7 @@
                     <h4><span style="color: rgba(0, 0, 0, .5); text-decoration: line-through;">$99,50</span> $79.99</h4>
 
                 </div>
-                <div class="accessories1">
+                <div class="accessories4">
                     <img src="imagens/product-image-4.jpg" alt="Isca de pescaria 2">
                     <h3>Fishing Hook</h3>
                     <i class="fas fa-star"></i>
@@ -389,7 +388,7 @@
                 </div>
             </div>
 
-            <div class="deal">
+            <div class="deal-of-the-week">
                 <div class="deal-img-left">
                     <img src="imagens/product-image-4.jpg" alt="Isca de pescaria">
                 </div>
@@ -468,8 +467,8 @@
                             nulla velit imperdiet sollicitudin.</p>
 
                         <div class="blog-text-a">
-                            <a href=""> Read more
-                                <i class="fas fa-long-arrow-alt-right"></i></a>
+                            <a href=""> Read more</a>
+                            <i class="fas fa-long-arrow-alt-right"></i>
                         </div>
                     </div>
                 </div>
@@ -497,8 +496,8 @@
                             nulla velit imperdiet sollicitudin.</p>
 
                         <div class="blog-text-a">
-                            <a href=""> Read more
-                                <i class="fas fa-long-arrow-alt-right"></i></a>
+                            <a href=""> Read more</a>
+                            <i class="fas fa-long-arrow-alt-right"></i>
                         </div>
                     </div>
                 </div>
@@ -524,8 +523,8 @@
                             nulla velit imperdiet sollicitudin.</p>
 
                         <div class="blog-text-a">
-                            <a href=""> Read more
-                            <i class="fas fa-long-arrow-alt-right"></i></a>
+                            <a href=""> Read more</a>
+                            <i class="fas fa-long-arrow-alt-right"></i>
                         </div>
                     </div>
                 </div>
@@ -544,6 +543,7 @@
 
         </section>
 
+
         <div class="botton-section">
 
             <div class="botton-section1">
@@ -554,7 +554,7 @@
                 <div class="formulario">
                     <input type="search" placeholder="Email address ...">
                     </input>
-                    <button><a href="">Subscribe</a></button>
+                    <button>Subscribe</button>
 
                 </div>
                 <div class="call">
@@ -562,8 +562,11 @@
                     <h2>
                         1-800-915-6270</h2>
                 </div>
+
+
             </div>
         </div>
+
 
         <footer>
             <div class="top-footer">
@@ -578,7 +581,7 @@
                         Donec ut
                         metus leo auctor id faucibus.</h5>
 
-                    <div class="top-footer-social">
+                    <div class="social-footer">
 
                         <i class="fab fa-facebook-f"></i>
 
@@ -587,66 +590,64 @@
                         <i class="fab fa-skype"></i>
 
                         <i class="fab fa-pinterest-p"></i>
+
                     </div>
                 </div>
-
                 <div class="top-footer2">
+
                     <h3>Contact Us</h3>
+
                     <div class="footer-contact">
-                        <div class="footer-contact1">
-                            <i class="fas fa-phone-alt"></i>
+                        <i class="fas fa-phone-alt"></i>
 
-                            <h5> 1 (800) 915 6270</br>
-                                1 (800) 915 6271</h5>
-                        </div>
+                        <h5> 1 (800) 915 6270</br>
+                            1 (800) 915 6271</h5>
+                    </div>
 
-                        <div class="footer-contact1">
+                    <div class="footer-contact">
 
-                            <i class="far fa-envelope"></i>
+                        <i class="far fa-envelope"></i>
 
-                            <h5> support@malicfishing.com</h5>
-                        </div>
+                        <h5> support@malicfishing.com</h5>
+                    </div>
 
-                        <div class="footer-contact1">
+                    <div class="footer-contact">
 
-                            <i class="fab fa-skype"></i>
+                        <i class="fab fa-skype"></i>
 
-                            <h5>Skype: malicfishing</h5>
-                        </div>
-                        <div class="footer-contact1">
+                        <h5>Skype: malicfishing</h5>
+                    </div>
+                    <div class="footer-contact">
 
-                            <i class="fas fa-map-marker-alt"></i>
+                        <i class="fas fa-map-marker-alt"></i>
 
-                            <h5>2726 Avenue Papineau Montreal, QC, Canada</h5>
-                        </div>
+                        <h5>2726 Avenue Papineau Montreal, QC, Canada</h5>
                     </div>
                 </div>
 
-                <div class="top-footer2">
+                <div class="top-footer3">
+
                     <h3>Twitter</h3>
-                    <div class="footer-contact">
-                        <div class="footer-contact2">
-                            <div>
-                                <i class="fab fa-twitter"></i>
-                            </div>
-                            <div class="footer-contact2-2">
-                                <h5>A fishing vessel is a boat or ship used to catch fish in the sea.</h5>
-                                <p> 3 hours ago</p>
-                            </div>
-                        </div>
-                        <div class="footer-contact2">
-                            <div>
-                                <i class="fab fa-twitter"></i>
-                            </div>
 
-                            <div class="footer-contact2-2">
-                                <h5>A fishing vessel is a boat or ship used to catch fish in the sea.</h5>
-                                <p> 5 days ago</p>
-                            </div>
+                    <div class="footer-contact">
+
+                        <i class="fab fa-twitter"></i>
+                        <div>
+                            <h5>A fishing vessel is a boat or ship used to catch fish in the sea.</h5>
+                            <p> 3 hours ago</p>
                         </div>
                     </div>
+                    <div class="footer-contact">
+
+                        <i class="fab fa-twitter"></i>
+                        <div>
+                            <h5>A fishing vessel is a boat or ship used to catch fish in the sea.</h5>
+                            <p> 5 days ago</p>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="top-footer1">
+                <div class="top-footer4">
                     <h3>Instagram</h3>
                 </div>
             </div>

@@ -1,19 +1,4 @@
 @charset "UTF-8";
-/* Variables */
-
-:root {
-    --primary: #13788a;
-    --secondary: #34a5b3;
-    --text-primary: #111;
-    --text-secondary: #777;
-    --border-primary: rgba(0, 0, 0, .3);
-    --gray: #f9fafc;
-    --shadow-primary: 0 2px 10px rgba(34, 34, 34, 0.15);
-    --header-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-    --font-primary: "Montserrat", sans-serif;
-    --font-secondary: "Hind", sans-serif;
-}
-
 /* Formatação da página em geral */
 
 * {
@@ -21,30 +6,46 @@
     max-width: 1440px;
     margin: 0 auto;
     text-decoration: none;
+    font-family: 'roboto', Helvetica, Verdana, Tahoma, sans-serif;
     box-sizing: border-box;
 }
 
-body {
-    font-family: var(--font-primary);
-    background: #fff;
-    font-size: 1rem;
+p {
+    font-weight: 300;
+    text-align: left;
+    font-size: .8rem;
+    color: #111111;
+}
+
+h1 {
+    margin-top: 1em;
+    font-size: 2.5rem;
+    color: #111111;
+}
+
+h2 {
+    margin-top: 0.5em;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+h5 {
+    margin: 20px 10px;
+    font-weight: bold;
 }
 
 img {
     display: block;
-    max-width: 100%;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: medium;
+body {
 }
 
 /* Topo da página */
 
 .toppage {
     max-width: 100%;
+    border: 1px solid rgba(204, 204, 204, .5);
 }
 
 /* Topo da página */
@@ -53,19 +54,19 @@ a {
     display: flex;
     padding: 0px 7.5%;
     height: 3.2rem;
-    background-color: var(--text-primary);
+    background-color: black;
     color: white;
 }
 
 .toppage1 a {
     color: white;
     text-decoration: none;
-    font-size: medium;
-    margin: 0% 1rem;
+    font-size: .8rem;
+    margin: 0% 15px;
 }
 
 .toppage1 i {
-    margin-right: .3rem;
+    margin-right: 5px;
     font-size: 1rem;
 }
 
@@ -79,7 +80,7 @@ a {
 .toppageright {
     width: 25%;
     text-align: right;
-    margin-right: 1rem;
+    margin-right: 5px;
     line-height: 3.2rem;
 }
 
@@ -89,62 +90,54 @@ a {
     display: flex;
     justify-content: space-between;
     height: 5.6rem;
+    margin: 0;
     background-color: #fff;
-    padding-left: 6%;
-    padding-right: 6%;
-    align-items: center;
+    width: 90%;
 }
 
 .toplogo {
-    padding: .6rem;
-    width: 20%;
-    margin-left: -1rem;
+    padding: 10px;
 }
 
 /* Formatação do Menu */
 
 .topmenu {
-    width: 50%;
-    margin-right: 0%;
-}
-
-.topmenu-itens {
     display: flex;
     justify-content: flex-end;
+    margin-top: 25px;
 }
 
 /* posiciona um elemento ao lado do outro e formata o botão */
 
-.topmenu-itens li {
+.topmenu li {
     list-style: none;
     line-height: 2.5rem;
     font-size: medium;
     font-weight: 600;
-    width: 2.5rem;
-    margin: 0 1.25rem;
+    width: 40px;
+    margin: 0 20px;
     text-align: center;
 }
 
 /* Formata o link da opção */
 
-.topmenu-itens li a {
+.topmenu li a {
     display: block;
     text-decoration: none;
-    color: #000000;
-    width: 4.25rem;
+    color: #551a8b;
 }
 
 /* formata o submenu simples */
 
-.topmenu-itens li ul {
+.topmenu li ul {
     position: absolute;
     display: none;
-    border: 1px solid var(--border-primary);
+    border: 1px solid rgba(0, 0, 0, .3);
 }
 
-.topmenu-itens li ul li {
-    width: 10rem;
-    margin-left: .3rem;
+.topmenu li ul li {
+    width: 15rem;
+    margin-left: 5px;
     display: block;
     position: relative;
     list-style: none;
@@ -154,64 +147,42 @@ a {
 
 /* Aplica uma nova cor toda vez que o mouse passa sobre os links */
 
-.topmenu-itens li a:hover {
+.topmenu li a:hover {
     color: blue;
     transition: .5s;
 }
 
-.topmenu-itens li:hover ul {
+.topmenu li:hover ul {
     display: block;
-    border: 1px solid var(--text-secondary);
-    border-top: 3px solid var(--primary);
+    border: 1px solid rgba(red, green, blue, .5);
+    border-top: 3px solid #17a2b8;
 }
 
 /* Formatação da pesquisa  */
 
 .topsearch {
-    margin-left: 1rem;
+    display: flex;
+    width: 15rem;
+    line-height: 4.4rem;
+    align-items: center;
+    justify-content: end;
 }
 
 .topsearch input {
-    border-color: var(--border-primary);
-    border-radius: 3.1rem 0 0 3.1rem;
-    height: 2.2rem;
-    font-size: medium;
-    text-align: left;
-    padding-left: 1rem;
-    width: 9.4rem;
+    border: 2px solid #551a8b;
+    border-radius: 10px 0 0 10px;
+    height: 40px;
+    font-size: large;
 }
 
 .topsearch button {
-    border-color: rgba(17, 17, 17, .3);
-    border-radius: 0 3.1rem 3.1rem 0;
-    width: 3.75rem;
-    height: 2.2rem;
+    border: 2px solid #551a8b;
+    border-radius: 0 10px 10px 0;
+    width: 40px;
+    height: 40px;
+    margin-left: -13%;
+    font-size: large;
     background-color: #17a2b8;
-    margin-left: -2%;
-}
-
-.topsearch a {
-    font-size: medium;
-}
-
-.topsearch a i {
-    color: #000000;
-    margin-left: .3rem;
-}
-
-/* Formatação dos cards da Social */
-
-.social {
-    width: 8rem;
-    display: flex;
-    flex-direction: column;
-    float: left;
-    height: 40rem;
-    justify-content: center;
-}
-
-.social i {
-    margin: .6rem auto;
 }
 
 /* Formatação da primeira section */
@@ -225,34 +196,47 @@ a {
     max-width: 85%;
 }
 
+.social {
+    width: 5rem;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    height: 30rem;
+    justify-content: center;
+}
+
+.social i {
+    margin: 10px auto;
+}
+
 .toptext {
-    width: 85%;
     display: flex;
     justify-content: space-between;
-    margin: 0 1rem 0 0;
+    margin: 0 15px 0 0;
 }
 
 .toptext-text {
     width: 45%;
-    margin-top: 10rem;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: left;
 }
 
 .toptext-text h1 {
     line-height: 150%;
-    font-size: 2rem;
-    font-family: var(--font-primary);
-    font-weight: 600;
+    margin-bottom: 2rem;
 }
 
 .toptext-text h3 {
     line-height: 150%;
-    margin: 2rem 0;
+    margin-bottom: 2rem;
     font-weight: 300;
 }
 
 .toptext-imagem {
-    margin: 3rem 0;
-    width: 55%;
+    margin-top: 2rem;
+    width: 45%;
 }
 
 .toptext-imagem img {
@@ -262,87 +246,99 @@ a {
 .toptext-text a {
     display: block;
     float: left;
-    width: 8rem;
+    width: 12rem;
     line-height: 3rem;
     text-align: center;
-    background-color: var(--primary);
+    background-color: #0d5763;
     color: #ffffff;
 }
 
-/* Formatação da seção fishing */
-
-.type-fishing {
+.fishing {
     display: flex;
     justify-content: space-around;
-    margin-top: 3rem;
+    margin-top: 50px;
 }
 
-.type-fishing1 {
+.ice-fishing {
     display: flex;
     flex-direction: column;
-    width: 23%;
-    box-shadow: var(--shadow-primary);
-    margin: 2.5rem 0;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
-.type-fishing1 img {
+.fly-fishing {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.fishing-tips {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.boat-fishing {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.fishing img {
     width: 50%;
-    margin: 2rem auto;
+    margin: 40px auto 20px;
 }
 
-.type-fishing1 h4 {
-    color: var(--secondary);
+.fishing h4 {
+    color: #17a2b8;
+    margin: 20px auto
 }
 
-.type-fishing1 p {
-    margin: 1rem;
+.fishing p {
+    margin: 0 20px;
     line-height: 1.5rem;
     text-align: center;
 }
 
-/* Formatação da seção About */
-
 .section-about {
     display: flex;
-    margin-top: 3.2rem;
-    margin-bottom: 4.4rem;
-    background-color: #fff;
-}
-
-.section-about-text {
-    width: 45%;
+    margin-top: 50px;
+    margin-bottom: 70px;
 }
 
 .section-about-text h4 {
-    color: var(--primary);
-    margin-bottom: 1rem;
-    font-weight: 100;
+    color: #17a2b8;
 }
 
 .section-about-text h2 {
-    font-family: var(--font-primary);
     line-height: 150%;
-    font-weight: 400;
-    letter-spacing: 2px;
+    font-weight: 300;
 }
 
 .section-about-text p {
     line-height: 130%;
-    font-weight: 100;
+    font-weight: 300;
     font-size: medium;
-    margin: .6rem 0;
+    margin: 10px 0;
 }
 
 .section-about-text ul li {
     list-style: none;
     font-weight: 300;
     font-size: medium;
-    margin: .6rem 0;
+    margin: 10px 0;
 }
 
 .section-about-text i {
-    color: var(--secondary);
-    margin-right: .3rem;
+    color: #17a2b8;
+    margin-right: 5px;
     font-size: 1rem;
 }
 
@@ -352,149 +348,173 @@ a {
     width: 8rem;
     line-height: 3rem;
     text-align: center;
-    background-color: var(--primary);
+    background-color: #0d5763;
     color: #ffffff;
 }
 
-.section-about-li {
-    display: flex;
-}
-
 .top-title h2 {
-    color: var(--secondary);
+    color: #17a2b8;
     text-align: center;
-    margin-bottom: 1.25rem;
+    margin-bottom: 20px;
 }
-
-/* Formatação dos sub-titulos */
 
 .top-title span {
     display: flex;
     justify-content: center;
-    width: 2.5rem;
+    width: 40px;
 }
 
 .top-title h3 {
     line-height: 170%;
     font-weight: 300;
     font-size: medium;
-    margin: 1.25rem 15rem;
+    margin: 20px 250px;
     text-align: center;
 }
-
-/* Formatação da seção Our-services */
 
 .our-services-services {
     display: flex;
     flex-wrap: wrap;
-    margin: 1.9rem auto;
+    margin: 30px auto;
 }
 
 .services {
-    width: 23.75rem;
-    height: 12.5rem;
-    margin-bottom: 1.9rem;
+    width: 380px;
+    height: 200px;
+    margin-bottom: 30px;
 }
 
 .services img {
-    width: 23.75rem;
-    height: 12.5rem;
+    width: 380px;
+    height: 200px;
 }
 
 .services h4 {
-    margin-top: -6.25rem;
-    margin-left: 6.25rem;
+    margin-top: -100px;
+    margin-left: 100px;
     width: 22.5rem;
     line-height: 1rem;
     color: rgba(255, 255, 255, .8);
 }
 
-/* Formatação da seção feedback */
-
 .feedback {
     display: flex;
-    margin-bottom: 2.5rem;
 }
 
-.feedback1 img {
+.feedback1 img, .feedback2 img {
     border-radius: 50%;
     float: left;
     width: 15%;
 }
 
-.feedback1 h3 {
+.feedback h3 {
     font-weight: 200;
-    margin-left: 5rem;
-    margin-top: .9rem;
+    margin-left: 80px;
+    margin-top: 15px;
 }
 
-.feedback1 h5 {
-    color: var(--secondary);
-    margin-left: 5rem;
-    margin-top: .2rem;
+.feedback h5 {
+    color: #17a2b8;
+    margin-left: 80px;
+    margin-top: 3px;
 }
 
-.feedback1 p {
-    width: .62rem 1.25rem;
+.feedback1 p, .feedback2 p {
+    width: 10px 20px;
     line-height: 200%;
 }
 
-.feedback1 {
+.feedback1, .feedback2 {
     border: 1px solid rgba(204, 204, 204, .5);
-    margin: 1.25rem;
-    padding: 3.125rem;
+    margin: 20px;
+    padding: 50px;
 }
-
-/* Formatação da avaliação com estrelas */
 
 .stars {
     float: right;
     color: rgb(243, 207, 47);
-    margin-top: .9rem;
+    margin-top: 15px;
 }
-
-/* Formatação da seção accessories */
 
 .accessories {
     display: flex;
     justify-content: space-around;
+    margin-top: 50px;
     text-align: center;
 }
 
 .accessories img {
     width: 80%;
-    margin: 2.5rem auto 1.25rem;
+    margin: 40px auto 20px;
 }
 
 .accessories h4 {
-    color: var(--secondary);
+    color: #17a2b8;
 }
-
-/* Formatação dos icones */
 
 .fa-star {
     color: rgb(243, 207, 47);
     font-size: small;
-    margin-top: .62rem;
-    margin-bottom: .62rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .black {
     color: black;
 }
 
-/* Formatação da seção deal */
-
-.deal {
-    background-color: var(--gray);
-    margin: 6rem 0;
+.ice-fishing {
     display: flex;
-    justify-content: space-between;
-    height: 20rem;
+    flex-direction: column;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.fly-fishing {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.fishing-tips {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.boat-fishing {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.fishing h4 {
+    color: #17a2b8;
+    margin: 20px auto
+}
+
+.fishing p {
+    margin: 0 20px;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.deal-of-the-week {
+    background-color: #f9fafc;
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between
 }
 
 .deal-img-left {
-    width: 15%;
+    width: 20%;
     justify-items: left;
 }
 
@@ -503,19 +523,12 @@ a {
     opacity: .5;
 }
 
-.deal-img-right {
-    width: 30%;
-    background-image: url('../imagens/product-image-3-xl.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .deal-text {
-    width: 45%;
+    width: 40%;
 }
 
 .deal-text span {
-    margin-right: .6rem;
+    margin-right: 10px;
 }
 
 .deal-text h1 {
@@ -523,7 +536,14 @@ a {
 }
 
 .deal-text h2 {
-    margin-top: 3.125rem;
+    margin-top: 50px;
+}
+
+.deal-img-right {
+    width: 30%;
+    background-image: url('../imagens/product-image-3-xl.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .deal-time {
@@ -534,9 +554,9 @@ a {
     background: #fff;
     border: 1px solid rgba(204, 204, 204, .5);
     text-align: center;
-    width: 6.25rem;
-    margin: .3rem;
-    padding: .3rem .6rem;
+    width: 100px;
+    margin: 5px 5px;
+    padding: 5px 10px;
 }
 
 .deal-time-numbers h4 {
@@ -549,12 +569,10 @@ a {
     width: 8rem;
     line-height: 3rem;
     text-align: center;
-    background-color: var(--primary);
+    background-color: #0d5763;
     color: #ffffff;
-    margin: 1.25rem 0 3.125rem;
+    margin: 20px 0 50px;
 }
-
-/* Formatação da seção blog */
 
 .blog {
     display: flex;
@@ -564,18 +582,17 @@ a {
 
 .blog-img img {
     width: 100%;
-    margin-bottom: 1.25rem;
+    margin-bottom: 20px;
 }
 
 .blog-text i {
-    color: var(--secondary);
-    margin: 1.25rem 0px;
+    color: #17a2b8;
+    margin: 20px 0px;
 }
 
 .blog-text h5 {
     font-weight: 100;
-    margin-right: 2.5rem;
-    margin-top: 1.25rem;
+    margin-right: 40px;
 }
 
 .blog-text-i {
@@ -587,11 +604,11 @@ a {
 }
 
 .blog-text-a {
-    width: 7.5rem;
+    width: 120px;
     display: flex;
     justify-content: start;
     align-items: center;
-    margin: .62rem .3rem;
+    margin: 10px 5px;
     font-size: medium;
 }
 
@@ -605,16 +622,12 @@ a {
     margin-left: 0px;
 }
 
-/* Formatação da seção brand icons */
-
 .brand-logo {
     display: flex;
     width: 100%;
-    height: 6.25rem;
-    margin: 4.4rem auto;
+    height: 100px;
+    margin: 70px auto;
 }
-
-/* Formatação da seção inferior */
 
 .botton-section {
     background-color: #f9fafc;
@@ -624,7 +637,7 @@ a {
 .botton-section1 {
     width: 85%;
     display: flex;
-    height: 9.4rem;
+    height: 150px;
     align-items: center;
 }
 
@@ -633,62 +646,56 @@ a {
     font-weight: 700;
 }
 
-/* Formatação do formulario */
-
 .formulario {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 50%;
     border: 1px solid rgba(204, 204, 204, .5);
+    height: 56px;
     font-size: large;
-    padding: .2rem;
-    background-color: #fff;
+    padding: 5px;
 }
 
 .formulario input {
-    height: 2rem;
+    height: 38px;
     width: 60%;
     border: none;
 }
 
 .formulario button {
-    height: 2.38rem;
-    width: 6.25rem;
+    height: 38px;
+    width: 100px;
     text-align: center;
     background-color: #0d5763;
     color: #ffffff;
     margin: 0;
 }
 
-/* Formatação da seção call */
+}
 
 .call {
     width: 30%;
-    padding: 1rem;
 }
 
 .call h4 {
     color: rgba(23, 162, 184, .5);
-    line-height: .9rem;
+    line-height: 15px;
     font-weight: 100;
 }
 
 .call h2 {
-    line-height: 1.56rem;
+    line-height: 25px;
     font-weight: 700;
-    margin-top: .3rem;
 }
-
-/* Formatação do footer */
 
 footer {
     width: 100%;
     background-image: url(../imagens/footer.jpg);
-    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-    height: 30rem;
+    height: 470px;
 }
 
 .top-footer {
@@ -696,7 +703,11 @@ footer {
     display: flex;
     justify-content: space-between;
     line-height: 150%;
-    padding-top: 3.12rem;
+    padding-top: 50px;
+}
+
+.top-footer p {
+    color: #fff;
 }
 
 .top-footer1 {
@@ -704,80 +715,59 @@ footer {
 }
 
 .top-footer2 {
-    width: 27%;
+    width: 23%;
 }
 
-/* Formatação dos icones */
+.top-footer3 {
+    width: 23%;
+}
 
-.top-footer-social i {
+.top-footer4 {
+    width: 23%;
+}
+
+.social-footer i {
     font-size: large;
     border: 1px solid rgb(204, 204, 204);
     border-radius: 50%;
-    width: 1.9rem;
-    height: 1.9rem;
+    width: 30px;
+    height: 30px;
     text-align: center;
-    padding: .25rem;
-    margin: 1.5rem .4rem;
+    padding: 4px;
+    margin-right: 10px;
 }
-
-/* Formatação da seção contact */
 
 .footer-contact {
     display: flex;
-    flex-direction: column;
-    padding: .5rem 0;
-}
-
-.footer-contact1 {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 3.2rem;
-    padding-left: .5rem;
-}
-
-.footer-contact2 {
-    display: flex;
-    width: 100%;
-    padding-left: .5rem;
-}
-
-.footer-contact2-2 {
-    display: flex;
-    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: -25px;
 }
 
 .footer-contact i {
-    width: 15%;
-    color: var(--secondary);
+    width: 5%;
+    color: #17a2b8;
+    margin-top: 25px;
 }
 
 .footer-contact h5 {
-    width: 90%;
-}
-
-.footer-contact h3 {
-    margin-top: 5rem;
+    width: 75%
 }
 
 .footer-contact p {
-    margin: -.62rem 0 2.2rem .62rem;
+    margin: -10px 0 35px 10px;
     opacity: 50%;
-    margin-top: .5rem;
 }
-
-/* Formatação da seção feedback */
 
 .botton-footer {
     display: flex;
-    margin: 5rem;
+    margin: 120px 115px 0 110px;
 }
 
 .botton-footer p {
     color: #fff;
-    font-weight: 9.4rem;
-    margin-left: .62rem;
+    font-weight: 150px;
+    margin-left: 10px
 }
 
 .botton-footer img {
-    margin-right: .62rem;
+    margin-right: 10px;
