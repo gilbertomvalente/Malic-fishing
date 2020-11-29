@@ -1,4 +1,5 @@
 @charset "UTF-8";
+<<<<<<< Updated upstream
 /* Formatação da página em geral */
 
 * {
@@ -39,18 +40,65 @@ img {
 }
 
 body {
+=======
+/* Variables   */
+
+:root {
+  --primary: #13788a;
+  --secondary: #34a5b3;
+  --text-primary: #111;
+  --text-secondary: #777;
+  --border-primary: rgba(0, 0, 0, .3);
+  --gray: #f9fafc;
+  --shadow-primary: 0 2px 10px rgba(34, 34, 34, 0.15);
+  --header-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Hind", sans-serif;
+}
+
+/* Formatação da página em geral   */
+
+* {
+  padding: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  background: #fff;
+  font-size: 1rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: medium;
+  font-family: var(--font-secondary);
+>>>>>>> Stashed changes
 }
 
 /* Topo da página */
 
 .toppage {
+<<<<<<< Updated upstream
     max-width: 100%;
     border: 1px solid rgba(204, 204, 204, .5);
+=======
+  width: 100%;
+  box-shadow: var(--shadow-primary);
+>>>>>>> Stashed changes
 }
 
-/* Topo da página */
-
 .toppage1 {
+<<<<<<< Updated upstream
     display: flex;
     padding: 0px 7.5%;
     height: 3.2rem;
@@ -68,24 +116,48 @@ body {
 .toppage1 i {
     margin-right: 5px;
     font-size: 1rem;
+=======
+  display: flex;
+  background-color: #111;
+  padding: 0 7.5%;
+  align-items: center;
+  color: #fff;
 }
 
 .toppageleft {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 75%;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0%;
 }
 
+.toppageright {
+  width: 20%;
+  margin-right: 0%;
+  text-align: right;
+>>>>>>> Stashed changes
+}
+
+.toppageleft1 {
+  margin: 1% 2% 1% 0;
+}
+
+<<<<<<< Updated upstream
 .toppageright {
     width: 25%;
     text-align: right;
     margin-right: 5px;
     line-height: 3.2rem;
+=======
+.toppage i {
+  font-size: large;
+  margin-right: .3rem;
+>>>>>>> Stashed changes
 }
 
-/* Topo menu e logo */
+/*Criando o label */
 
+<<<<<<< Updated upstream
 .toppage2 {
     display: flex;
     justify-content: space-between;
@@ -105,10 +177,40 @@ body {
     display: flex;
     justify-content: flex-end;
     margin-top: 25px;
+=======
+label[for="bt_menu"] {
+  padding: 5px;
+  background-color: #222;
+  color: #fff;
+  font-family: Arial;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
 }
 
-/* posiciona um elemento ao lado do outro e formata o botão */
+#bt_menu {
+  display: none;
+}
 
+label[for="bt_menu"] {
+  display: none;
+}
+
+.toppage2 {
+  display: flex;
+  align-items: center;
+  padding: 0 7.5%;
+  height: 6rem;
+>>>>>>> Stashed changes
+}
+
+.toplogo {
+  width: 15%;
+}
+
+<<<<<<< Updated upstream
 .topmenu li {
     list-style: none;
     line-height: 2.5rem;
@@ -117,18 +219,36 @@ body {
     width: 40px;
     margin: 0 20px;
     text-align: center;
+=======
+.toplogo img {
+  width: 100%;
+>>>>>>> Stashed changes
 }
 
-/* Formata o link da opção */
+.topmenu {
+  width: 65%;
+}
 
+<<<<<<< Updated upstream
 .topmenu li a {
     display: block;
     text-decoration: none;
     color: #551a8b;
+=======
+.topmenu ul {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+>>>>>>> Stashed changes
 }
 
-/* formata o submenu simples */
+.topmenu ul li {
+  list-style: none;
+  margin: 1%;
+  line-height: 120%;
+}
 
+<<<<<<< Updated upstream
 .topmenu li ul {
     position: absolute;
     display: none;
@@ -143,10 +263,23 @@ body {
     list-style: none;
     text-align: left;
     font-size: large;
+=======
+.topmenu ul li a i {
+  font-size: medium;
 }
 
-/* Aplica uma nova cor toda vez que o mouse passa sobre os links */
+.topmenu ul li ul {
+  position: absolute;
+  display: none;
+>>>>>>> Stashed changes
+}
 
+.topmenu ul a:hover {
+  color: blue;
+  transition: all .5s;
+}
+
+<<<<<<< Updated upstream
 .topmenu li a:hover {
     color: blue;
     transition: .5s;
@@ -156,11 +289,31 @@ body {
     display: block;
     border: 1px solid rgba(red, green, blue, .5);
     border-top: 3px solid #17a2b8;
+=======
+.topmenu ul li:hover ul {
+  display: block;
+  position: absolute;
+  box-shadow: var(--shadow-primary);
+  border-top: 2px solid var(--secondary);
+  margin-top: .2rem;
 }
 
-/* Formatação da pesquisa  */
+.topmenu a {
+  display: block;
+  color: var(--text-primary);
+  padding: 5px;
+>>>>>>> Stashed changes
+}
+
+.topmenu ul li ul li {
+  margin: 0;
+  width: 10rem;
+  background-color: #fff;
+  line-height: 120%;
+}
 
 .topsearch {
+<<<<<<< Updated upstream
     display: flex;
     width: 15rem;
     line-height: 4.4rem;
@@ -237,13 +390,100 @@ body {
 .toptext-imagem {
     margin-top: 2rem;
     width: 45%;
+=======
+  text-align: right;
+  align-items: center;
+}
+
+.topsearch input {
+  width: 70%;
+  border-color: var(--border-primary);
+  border-radius: 3.1rem 0 0 3.1rem;
+  height: 2rem;
+  padding-left: 1rem;
+  font-size: medium;
+}
+
+.topsearch button {
+  background-color: var(--secondary);
+  border-color: var(--border-primary);
+  border-radius: 0 3.1rem 3.1rem 0;
+  margin-left: -2.5%;
+  width: 2.5rem;
+}
+
+.topsearch button i {
+  padding-top: .3rem;
+}
+
+.topsearch i {
+  font-size: large;
+  color: #000;
+}
+
+/* Formatação da primeira section */
+
+/* Formatação dos cards da Social  OK */
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9fafc;
+  max-width: 100%;
+  margin: 2% 0;
+}
+
+.social {
+  width: 7.5%;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  justify-content: center;
+}
+
+.social i {
+  margin: .6rem auto;
+}
+
+.toptext {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem 0 0;
+  align-items: center;
+}
+
+.toptext-text {
+  width: 45%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.toptext-text h1 {
+  line-height: 150%;
+  font-size: 2rem;
+  font-family: var(--font-primary);
+  font-weight: 600;
+}
+
+.toptext-text h3 {
+  line-height: 150%;
+  margin: 2rem 0;
+  font-weight: 300;
+}
+
+.toptext-imagem {
+  margin: 3rem 0;
+  width: 55%;
+>>>>>>> Stashed changes
 }
 
 .toptext-imagem img {
-    width: 90%;
+  width: 90%;
 }
 
 .toptext-text a {
+<<<<<<< Updated upstream
     display: block;
     float: left;
     width: 12rem;
@@ -450,19 +690,249 @@ body {
 
 .accessories h4 {
     color: #17a2b8;
+=======
+  display: block;
+  float: left;
+  width: 8rem;
+  line-height: 3rem;
+  text-align: center;
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+/* Formatação da seção principal  OK */
+
+.principal-section {
+  max-width: 85%;
+}
+
+/* Formatação da seção fishing OK  */
+
+.type-fishing {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.type-fishing1 {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  box-shadow: var(--shadow-primary);
+  margin: 2.5rem 1rem;
+}
+
+.type-fishing1 img {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+.type-fishing1 h4 {
+  color: var(--secondary);
+}
+
+.type-fishing1 p {
+  margin: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+/* Formatação da seção About OK */
+
+.section-about {
+  display: flex;
+  margin-top: 3.2rem;
+  margin-bottom: 4.4rem;
+  background-color: #fff;
+  align-items: center;
+}
+
+.section-about-text {
+  width: 45%;
+}
+
+.section-about-text h4 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-weight: 100;
+}
+
+.section-about-text h2 {
+  font-family: var(--font-primary);
+  line-height: 150%;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.section-about-text p {
+  line-height: 130%;
+  font-weight: 100;
+  font-size: medium;
+  margin: .6rem 0;
+}
+
+.section-about-text ul li {
+  list-style: none;
+  font-weight: 300;
+  font-size: medium;
+  margin: .6rem 0;
+}
+
+.section-about-text i {
+  color: var(--secondary);
+  margin: .3rem .3rem 0 0;
+  font-size: 1rem;
+}
+
+.section-about-text a {
+  display: block;
+  float: left;
+  width: 8rem;
+  line-height: 3rem;
+  text-align: center;
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+.section-about-text-li {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+/* Formatação dos sub-titulos OK */
+
+.top-title h2 {
+  color: var(--secondary);
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.top-title span {
+  display: flex;
+  justify-content: center;
+  width: 2.5rem;
+}
+
+.top-title h3 {
+  line-height: 170%;
+  font-weight: 300;
+  font-size: medium;
+  margin: 1.25rem 20%;
+  text-align: center;
+}
+
+/* Formatação da seção Our-services OK */
+
+.our-services-services {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.9rem auto;
+}
+
+.services {
+  width: 23.75rem;
+  height: 12.5rem;
+  margin-bottom: 1.9rem;
+}
+
+.services img {
+  width: 23.75rem;
+  height: 12.5rem;
+}
+
+.services h4 {
+  margin-top: -6.25rem;
+  margin-left: 6.25rem;
+  width: 22.5rem;
+  line-height: 1rem;
+  color: rgba(255, 255, 255, .8);
+}
+
+/* Formatação da seção feedback OK */
+
+.feedback {
+  display: flex;
+  margin-bottom: 2.5rem;
+}
+
+.feedback1 {
+  border: 1px solid rgba(204, 204, 204, .5);
+  margin: 1.25rem;
+  padding: 3.125rem;
+}
+
+.feedback2 {
+  display: flex;
+}
+
+.feedback2 img {
+  border-radius: 50%;
+  float: left;
+  width: 4.4rem;
+  margin-right: 1rem;
+}
+
+.feedback2 h3 {
+  font-weight: 200;
+  margin-top: .9rem;
+}
+
+.feedback2 h5 {
+  color: var(--secondary);
+  margin-top: .2rem;
+}
+
+.feedback1 p {
+  width: .62rem 1.25rem;
+  line-height: 200%;
+}
+
+/* Formatação da avaliação com estrelas OK */
+
+.stars {
+  color: rgb(243, 207, 47);
+  margin-top: .9rem;
+  margin-left: .5rem;
+}
+
+/* Formatação da seção accessories OK */
+
+.accessories {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.accessories img {
+  width: 80%;
+  margin: 2.5rem auto 1.25rem;
+}
+
+.accessories h4 {
+  color: var(--secondary);
+>>>>>>> Stashed changes
 }
 
 .fa-star {
+<<<<<<< Updated upstream
     color: rgb(243, 207, 47);
     font-size: small;
     margin-top: 10px;
     margin-bottom: 10px;
+=======
+  color: rgb(243, 207, 47);
+  font-size: small;
+  margin-top: .62rem;
+  margin-bottom: .62rem;
+>>>>>>> Stashed changes
 }
 
 .black {
-    color: black;
+  color: black;
 }
 
+<<<<<<< Updated upstream
 .ice-fishing {
     display: flex;
     flex-direction: column;
@@ -516,26 +986,58 @@ body {
 .deal-img-left {
     width: 20%;
     justify-items: left;
+=======
+/* Formatação da seção deal OK */
+
+.deal {
+  background-color: var(--gray);
+  margin: 6rem 0;
+  display: flex;
+  justify-content: space-between;
+  height: 20rem;
+}
+
+.deal-img-left {
+  width: 15%;
+  justify-items: left;
+>>>>>>> Stashed changes
 }
 
 .deal-img-left img {
-    width: 100%;
-    opacity: .5;
+  width: 100%;
+  opacity: .5;
 }
 
+<<<<<<< Updated upstream
 .deal-text {
     width: 40%;
 }
 
 .deal-text span {
     margin-right: 10px;
+=======
+.deal-img-right {
+  width: 30%;
+  background-image: url('../imagens/product-image-3-xl.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.deal-text {
+  width: 45%;
+}
+
+.deal-text span {
+  margin-right: .6rem;
+>>>>>>> Stashed changes
 }
 
 .deal-text h1 {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
 .deal-text h2 {
+<<<<<<< Updated upstream
     margin-top: 50px;
 }
 
@@ -544,26 +1046,39 @@ body {
     background-image: url('../imagens/product-image-3-xl.jpg');
     background-repeat: no-repeat;
     background-position: center;
+=======
+  margin-top: 3.125rem;
+>>>>>>> Stashed changes
 }
 
 .deal-time {
-    display: flex;
+  display: flex;
 }
 
 .deal-time-numbers {
+<<<<<<< Updated upstream
     background: #fff;
     border: 1px solid rgba(204, 204, 204, .5);
     text-align: center;
     width: 100px;
     margin: 5px 5px;
     padding: 5px 10px;
+=======
+  background: #fff;
+  border: 1px solid rgba(204, 204, 204, .5);
+  text-align: center;
+  width: 6.25rem;
+  margin: .3rem;
+  padding: .3rem .6rem;
+>>>>>>> Stashed changes
 }
 
 .deal-time-numbers h4 {
-    font-weight: 100;
+  font-weight: 100;
 }
 
 .deal-text a {
+<<<<<<< Updated upstream
     display: block;
     float: left;
     width: 8rem;
@@ -574,13 +1089,28 @@ body {
     margin: 20px 0 50px;
 }
 
+=======
+  display: block;
+  float: left;
+  width: 8rem;
+  line-height: 3rem;
+  text-align: center;
+  background-color: var(--primary);
+  color: #ffffff;
+  margin: 1.25rem 0 3.125rem;
+}
+
+/* Formatação da seção blog OK */
+
+>>>>>>> Stashed changes
 .blog {
-    display: flex;
-    background-color: #f9fafc;
-    max-width: 100%;
+  display: flex;
+  background-color: #f9fafc;
+  max-width: 100%;
 }
 
 .blog-img img {
+<<<<<<< Updated upstream
     width: 100%;
     margin-bottom: 20px;
 }
@@ -593,60 +1123,103 @@ body {
 .blog-text h5 {
     font-weight: 100;
     margin-right: 40px;
+=======
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+.blog-text i {
+  color: var(--secondary);
+  margin: 1.25rem 0px;
+}
+
+.blog-text h5 {
+  font-weight: 100;
+  margin-right: 2.5rem;
+  margin-top: 1.25rem;
+>>>>>>> Stashed changes
 }
 
 .blog-text-i {
-    display: flex;
+  display: flex;
 }
 
 .blog1 {
-    width: 30%;
+  width: 30%;
 }
 
 .blog-text-a {
+<<<<<<< Updated upstream
     width: 120px;
     display: flex;
     justify-content: start;
     align-items: center;
     margin: 10px 5px;
     font-size: medium;
+=======
+  width: 7.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: .62rem .3rem;
+  font-size: medium;
+>>>>>>> Stashed changes
 }
 
 .blog-text-a a {
-    color: #000000;
-    margin-left: 0;
+  color: #000000;
+  margin-left: 0;
 }
 
 .blog-text-a i {
-    color: rgba(0, 0, 0, .5);
-    margin-left: 0px;
+  color: rgba(0, 0, 0, .5);
+  margin-left: 0px;
 }
 
+<<<<<<< Updated upstream
 .brand-logo {
     display: flex;
     width: 100%;
     height: 100px;
     margin: 70px auto;
+=======
+/* Formatação da seção brand icons OK */
+
+.brand-logo {
+  display: flex;
+  width: 100%;
+  height: 6.25rem;
+  margin: 4.4rem auto;
+>>>>>>> Stashed changes
 }
 
 .botton-section {
-    background-color: #f9fafc;
-    width: 100%;
+  background-color: #f9fafc;
+  width: 100%;
 }
 
 .botton-section1 {
+<<<<<<< Updated upstream
     width: 85%;
     display: flex;
     height: 150px;
     align-items: center;
+=======
+  width: 85%;
+  display: flex;
+  height: 9.4rem;
+  align-items: center;
+  justify-content: space-between;
+>>>>>>> Stashed changes
 }
 
 .subscribe {
-    width: 25%;
-    font-weight: 700;
+  width: 30%;
+  margin: 0;
 }
 
 .formulario {
+<<<<<<< Updated upstream
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -670,11 +1243,36 @@ body {
     background-color: #0d5763;
     color: #ffffff;
     margin: 0;
+=======
+  display: flex;
+  align-items: center;
+  width: 40%;
+  border: 1px solid rgba(204, 204, 204, .5);
+  font-size: large;
+  padding: .2rem;
+  background-color: #fff;
+}
+
+.formulario input {
+  height: 2rem;
+  width: 60%;
+  border: none;
+}
+
+.formulario button {
+  height: 2.38rem;
+  width: 6.25rem;
+  text-align: center;
+  background-color: #0d5763;
+  color: #ffffff;
+  margin: 0;
+>>>>>>> Stashed changes
 }
 
 }
 
 .call {
+<<<<<<< Updated upstream
     width: 30%;
 }
 
@@ -687,9 +1285,28 @@ body {
 .call h2 {
     line-height: 25px;
     font-weight: 700;
+=======
+  width: 25%;
+  padding-left: 2rem;
+  border-left: 1px solid rgba(0, 0, 0, .2);
+  margin: 0;
+}
+
+.call h4 {
+  color: rgba(23, 162, 184, .5);
+  line-height: .9rem;
+  font-weight: 100;
+}
+
+.call h2 {
+  line-height: 1.56rem;
+  font-weight: 700;
+  margin-top: .3rem;
+>>>>>>> Stashed changes
 }
 
 footer {
+<<<<<<< Updated upstream
     width: 100%;
     background-image: url(../imagens/footer.jpg);
     background-repeat: no-repeat;
@@ -708,20 +1325,40 @@ footer {
 
 .top-footer p {
     color: #fff;
+=======
+  width: 100%;
+  background-image: url(../imagens/footer.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.top-footer {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  line-height: 150%;
+  padding-top: 3.12rem;
+>>>>>>> Stashed changes
 }
 
 .top-footer1 {
-    width: 23%;
+  width: 23%;
 }
 
 .top-footer2 {
+<<<<<<< Updated upstream
     width: 23%;
+=======
+  width: 27%;
+>>>>>>> Stashed changes
 }
 
 .top-footer3 {
     width: 23%;
 }
 
+<<<<<<< Updated upstream
 .top-footer4 {
     width: 23%;
 }
@@ -735,9 +1372,21 @@ footer {
     text-align: center;
     padding: 4px;
     margin-right: 10px;
+=======
+.top-footer-social i {
+  font-size: large;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 50%;
+  width: 1.9rem;
+  height: 1.9rem;
+  text-align: center;
+  padding: .25rem;
+  margin: 1.5rem .4rem;
+>>>>>>> Stashed changes
 }
 
 .footer-contact {
+<<<<<<< Updated upstream
     display: flex;
     align-items: flex-start;
     margin-bottom: -25px;
@@ -756,9 +1405,53 @@ footer {
 .footer-contact p {
     margin: -10px 0 35px 10px;
     opacity: 50%;
+=======
+  display: flex;
+  flex-direction: column;
+  padding: .5rem 0;
+}
+
+.footer-contact1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 3.2rem;
+  padding-left: .5rem;
+}
+
+.footer-contact2 {
+  display: flex;
+  width: 100%;
+  padding-left: .5rem;
+}
+
+.footer-contact2-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contact i {
+  width: 15%;
+  color: var(--secondary);
+}
+
+.footer-contact h5 {
+  width: 90%;
+}
+
+.footer-contact h3 {
+  margin-top: 5rem;
+}
+
+.footer-contact p {
+  margin: -.62rem 0 2.2rem .62rem;
+  opacity: 50%;
+  margin-top: .5rem;
+>>>>>>> Stashed changes
 }
 
 .botton-footer {
+<<<<<<< Updated upstream
     display: flex;
     margin: 120px 115px 0 110px;
 }
@@ -771,3 +1464,169 @@ footer {
 
 .botton-footer img {
     margin-right: 10px;
+=======
+  display: flex;
+  margin: 3rem 5rem;
+  padding-bottom: 3rem;
+}
+
+.botton-footer p {
+  color: #fff;
+  font-weight: 9.4rem;
+  margin-left: .62rem;
+}
+
+.botton-footer img {
+  margin-right: .62rem;
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (max-width: 1199.98px) {}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (max-width: 991.98px) {
+  .toppage1 {
+    display: block;
+  }
+  .toppageleft {
+    width: 100%;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--text-secondary);
+  }
+  .toppageright {
+    text-align: center;
+    width: 100%;
+  }
+  .toptext-imagem {
+    display: none;
+    width: 0%;
+  }
+  .toptext-imagem img {
+    height: 0%;
+  }
+  .toptext-text {
+    width: 90%;
+  }
+  .type-fishing {
+    flex-wrap: wrap;
+  }
+  .type-fishing1 {
+    flex: 0 0 280px;
+  }
+  .section-about-img {
+    display: none;
+    width: 0%;
+  }
+  .section-about-text {
+    width: 100%;
+  }
+  .feedback2 {
+    flex-direction: column;
+  }
+  .stars {
+    margin: .9rem auto;
+  }
+  .accessories {
+    flex-wrap: wrap;
+  }
+  .accessories1 {
+    flex: 0 0 280px;
+  }
+  .deal-img-left, .deal-img-right {
+    display: none;
+    width: 0%;
+  }
+  .deal-text {
+    width: 100%;
+    margin-left: 13rem;
+  }
+  .blog {
+    flex-wrap: wrap;
+  }
+  .blog1 {
+    flex: 0 0 420px;
+  }
+  .subscribe {
+    width: 25%;
+  }
+  .formulario {
+    width: 45%;
+  }
+  .call {
+    width: 30%;
+    border: none;
+  }
+  .top-footer {
+    flex-wrap: wrap;
+  }
+  .top-footer1, .top-footer2 {
+    flex: 0 0 40%;
+    margin-bottom: 2rem;
+  }
+  .botton-footer {
+    margin: 1rem 5rem 3rem 5rem;
+  }
+  label[for="bt_menu"] {
+    display: none;
+  }
+  #bt_menu:checked~.menu {
+    margin-left: 0;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 767.98px) {
+  .feedback {
+    flex-wrap: wrap;
+  }
+  .brand5 {
+    display: none;
+  }
+  .botton-section1 {
+    flex-direction: column;
+    height: auto;
+  }
+  .subscribe {
+    width: 60%;
+    margin: 1em auto;
+  }
+  .formulario {
+    width: 60%;
+    margin: 0em auto;
+  }
+  .call {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin: 1em auto;
+    padding: 0;
+  }
+  .deal-text {
+    width: 100%;
+    margin-left: 1rem;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+  .toppageleft {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .top-footer {
+    flex-direction: column;
+  }
+  .top-footer1, .top-footer2 {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+}
+>>>>>>> Stashed changes
