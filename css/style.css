@@ -210,7 +210,7 @@ label[for="bt_menu"] {
   margin: 2% 0;
 }
 
-.social {
+.aside-social {
   width: 7.5%;
   display: flex;
   flex-direction: column;
@@ -218,7 +218,7 @@ label[for="bt_menu"] {
   justify-content: center;
 }
 
-.social i {
+.aside-social i {
   margin: .6rem auto;
 }
 
@@ -279,7 +279,7 @@ label[for="bt_menu"] {
 .type-fishing {
   display: flex;
   justify-content: space-around;
-  margin-top: 3rem;
+  margin-top: 0rem;
 }
 
 .type-fishing1 {
@@ -932,4 +932,12 @@ footer {
     width: 80%;
     margin-bottom: 2rem;
   }
+    .brand4 {
+    display: none;
+  }
+
+  .botton-footer img {
+    max-width: 50%;
+}
+
 }
