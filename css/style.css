@@ -93,10 +93,6 @@ a {
   width: 15%;
 }
 
-.top-logo img {
-  width: 100%;
-}
-
 .top-menu {
   width: 65%;
   order: 1;
@@ -774,16 +770,16 @@ footer {
   margin-right: .62rem;
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
+/* X-Large devices (large desktops, less than 1400px)  */
+@media (max-width: 1399.98px) {
+  }
 
-@media (min-width: 1200px) {}
+/* Large devices (desktops, less than 1200px)  */
+@media (max-width: 1199.98px) { 
 
-/* Large devices (desktops, 992px and up) */
+}
 
-@media (max-width: 1199.98px) {}
-
-/* Medium devices (tablets, 800px and up) */
-
+/* Medium devices (tablets, less than 992px)  */
 @media (max-width: 991.98px) {
   .top-page1 {
     display: block;
@@ -903,9 +899,8 @@ footer {
   }
 }
 
-/* Small devices (landscape phones, 576px and up) */
-
-@media (max-width: 800px) {
+/* Small devices (landscape phones, less than 800) */
+@media (max-width: 799.98px) {
 
   .top-pageleft {
     flex-wrap: wrap;
@@ -991,7 +986,7 @@ footer {
     flex-wrap: wrap;
   }
 
-  .brand5 {
+  .brand5, .brand4 {
     display: none;
   }
 
@@ -1025,8 +1020,38 @@ footer {
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
-
 @media (max-width: 575.98px) {
+
+  .services img {
+    width: 80%;
+  }
+
+  .deal-time {
+    display: none;
+  }
+
+  .deal-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog1 {
+    max-width: 100%;
+  }
+
+  .brand3 {
+    display: none;
+  }
+
+  .call {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .call h2{
+    font-size: large;
+  }
 
   .top-footer {
     flex-direction: column;
@@ -1042,6 +1067,7 @@ footer {
   }
 
   .botton-footer img {
-    max-width: 50%;
+    display: none;
   }
 }
+
