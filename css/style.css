@@ -99,6 +99,7 @@ a {
 }
 
 .top-search {
+  display: flex;
   text-align: right;
   margin-top: 10px;
   order: 2;
@@ -181,8 +182,9 @@ a {
 }
 
 .top-search i {
-  font-size: x-large;
+  font-size: larger;
   color: #000;
+  padding-top: 8px;
 }
 
 /* Formatação da primeira section */
@@ -800,11 +802,7 @@ footer {
     width: 80%;
   }
 
-  .top-search input {
-    width: 55%;
-  }
-
-  .top-search {
+   .top-search {
     max-width: 11.25rem;
   }
 
@@ -981,6 +979,16 @@ footer {
   }
 
 /* Final do menu responsivo - hamburguer */
+
+  .top-section {
+    display: block;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  .aside-social {
+    display: none;
+  }
  
   .feedback {
     flex-wrap: wrap;
@@ -1022,9 +1030,19 @@ footer {
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
-  .services img {
-    width: 80%;
+  .top-search {
+    max-width: 10rem;
   }
+
+  /* Formatação da seção Our-services OK */
+
+.our-services-services {
+  display: block;
+}
+
+.services {
+  width: 20rem;
+}
 
   .deal-time {
     display: none;
@@ -1062,7 +1080,7 @@ footer {
     margin-bottom: 2rem;
   }
 
-  .brand4 {
+  .brand3 {
     display: none;
   }
 
