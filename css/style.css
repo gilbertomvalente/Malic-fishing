@@ -1036,13 +1036,13 @@ footer {
 
   /* Formatação da seção Our-services OK */
 
-.our-services-services {
-  display: block;
-}
+  .our-services-services {
+    display: block;
+  }
 
-.services {
-  width: 20rem;
-}
+  .services {
+    width: 20rem;
+  }
 
   .deal-time {
     display: none;
@@ -1078,10 +1078,6 @@ footer {
   .top-footer1, .top-footer2 {
     width: 80%;
     margin-bottom: 2rem;
-  }
-
-  .brand3 {
-    display: none;
   }
 
   .botton-footer img {
